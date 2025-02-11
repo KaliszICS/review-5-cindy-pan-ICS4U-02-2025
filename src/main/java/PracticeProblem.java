@@ -109,30 +109,52 @@ public class PracticeProblem {
 		System.out.print("Input a letter: ");
 		String text = in.nextLine();
 		System.out.println(word.indexOf(text.charAt(0)));
+		System.out.println(word.lastIndexOf(text.charAt(0)));
 
 	}
 
 	public static void q9() {
 		//Write question 5 code here
 		Scanner in = new Scanner(System.in);
-		System.out.print("");
+		System.out.print("Input a sentence: ");
+		String text = in.nextLine();
+		System.out.print("Your sentence is " + text.length() + " characters long");
+		System.out.println();
 	}
 	public static void q10() {
 		//Write question 5 code here
 		Scanner in = new Scanner(System.in);
-		System.out.print("");
+		System.out.print("Input a sentence: ");
+		String sentence = in.nextLine();
+		System.out.print("Input a word to replace: ");
+		String replace = in.nextLine();
+		System.out.print("What word would you like to replace it with: ");
+		String change = in.nextLine();
+		System.out.print(sentence.replaceAll(replace,change));
+		System.out.println();
 	}
 
 	public static void q11() {
 		//Write question 5 code here
 		Scanner in = new Scanner(System.in);
-		System.out.print("");
+		System.out.print("Input a sentence: ");
+		String trim = in.nextLine();
+		System.out.print((trim.toUpperCase()).trim());
+		System.out.println();
+		System.out.print((trim.toLowerCase()).trim());
+		System.out.println();
 	}
 
 	public static void q12() {
 		//Write question 5 code here
 		Scanner in = new Scanner(System.in);
-		System.out.print("");
+		System.out.print("Input a word: ");
+		String word = in.nextLine();
+		int num = word.length();
+		System.out.print(word.substring(0,4));
+		System.out.println();
+		System.out.print(word.substring((num-4)));
+		System.out.println();
 	}
 	
 
